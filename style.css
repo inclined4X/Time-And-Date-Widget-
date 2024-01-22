@@ -25,7 +25,7 @@ body{
     grid-template-columns: 8fr 4fr;
     background-color: #1e90ff;
     border-radius: 0.5em;
-
+    animation: neon-glow 1.5s ease-in infinite alternate;
 }
 
 
@@ -65,4 +65,15 @@ body{
 
 .clock-container .seconds{
     color: #0000ff;
+}
+
+
+
+@keyframes neon-glow {
+    0%{
+        box-shadow: 0 0 5px #fff, 0 0 20px #fff;
+    }
+    100%{
+        box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+    }
 }
