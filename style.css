@@ -42,3 +42,27 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+
+
+.clock-container span{
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.clock-container .hours{
+    color: #ff0000;
+}
+
+
+
+.clock-container .minutes{
+    color: #00ff00;
+}
+
+
+.clock-container .seconds{
+    color: #0000ff;
+}
