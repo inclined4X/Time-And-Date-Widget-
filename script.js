@@ -28,3 +28,24 @@ const monthNames = [
   "November",
   "December",
 ];
+
+function formatTime(time) {
+  return time < 10 ? "0" + time : time; //23 45 -> 00 : 45 : 10
+}
+
+function updateClock() {
+  const today = new Date();
+  //console.log(today);
+  let date = today.getDate();
+  console.log(date);
+  let day = weekDays[today.getDay()];
+  let month = monthNames[today.getMonth()];
+
+  console.log(day, month);
+  console.log(today.getDay(), today.getMonth());
+  let hours = formatTime(today.getHours);
+  let minutes = formatTime(today.getMinutes());
+  let seconds = formatTime(today.getSeconds());
+}
+
+updateClock();
