@@ -41,11 +41,14 @@ function updateClock() {
   let day = weekDays[today.getDay()];
   let month = monthNames[today.getMonth()];
 
-  console.log(day, month);
-  console.log(today.getDay(), today.getMonth());
+  //   console.log(day, month);
+  //   console.log(today.getDay(), today.getMonth());
   let hours = formatTime(today.getHours);
   let minutes = formatTime(today.getMinutes());
   let seconds = formatTime(today.getSeconds());
+
+  // to the UI
+  dateContainer.innerHTML = ` <p>${day}</p><p><span>${date}</span></p><p>${month}</p>`;
 }
 
 updateClock();
